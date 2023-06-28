@@ -1,7 +1,9 @@
 pipeline {
-	agent any
+	agent {
+		master
+	}
 	tools {
-        maven 'maven1' 
+        maven 'm1' 
     }
 	stages {
 		stage ('build') {
