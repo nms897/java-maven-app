@@ -1,7 +1,5 @@
 pipeline {
-	agent {
-		master
-	}
+	agent any
 	tools {
         maven 'm1' 
     }
